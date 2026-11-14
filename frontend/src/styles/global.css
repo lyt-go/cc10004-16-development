@@ -35,3 +35,53 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 质量检查 / 参数快照 */
+.panel { margin-top: 24px; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+.panel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.panel-head h3 { margin: 0; font-size: 16px; }
+.section-title { margin: 18px 0 8px; font-size: 14px; }
+.detail-card { border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-top: 12px; background: #fbfcfe; }
+.detail-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.detail-head h3 { margin: 0 0 4px; font-size: 15px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.detail-sub { margin: 0; color: var(--muted); font-size: 12px; }
+.detail-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.detail-section { margin-top: 16px; }
+.detail-section h4 { margin: 0 0 8px; font-size: 14px; }
+.detail-note { color: var(--muted); font-size: 12px; margin: 8px 0 4px; }
+.meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 16px; font-size: 13px; margin-top: 8px; }
+.meta-label { display: block; color: var(--muted); font-size: 12px; }
+.binding-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px; font-size: 13px; }
+.badge { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 11px; font-weight: 600; }
+.badge-draft { background: #eef2f7; color: #475569; }
+.badge-active { background: #e7f6ec; color: #157347; }
+.badge-archived { background: #ece9f7; color: #5b46a3; }
+.badge-frozen { background: #e0ecff; color: #1f4fa8; }
+.badge-p1 { background: #fde8e8; color: #b42318; }
+.badge-p2 { background: #fff4e5; color: #b25e09; }
+.badge-p3 { background: #eef2f7; color: #475569; }
+.badge-review-ok { background: #e7f6ec; color: #157347; }
+.badge-review-p1 { background: #fde8e8; color: #b42318; }
+.badge-review-p2 { background: #fff4e5; color: #b25e09; }
+.badge-review-draft { background: #eef2f7; color: #475569; }
+.quote-block { margin: 0; padding: 10px 12px; background: #f4f6f9; border-left: 3px solid var(--brand); border-radius: 4px; font-size: 13px; }
+.stage-timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.stage-step { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; font-size: 13px; }
+.stage-meta { color: var(--muted); font-size: 12px; }
+.stage-note { color: #334155; font-size: 12px; }
+.round-block { border: 1px solid var(--border); border-radius: 8px; padding: 10px; margin-bottom: 10px; background: #fff; }
+.round-head { display: flex; flex-direction: column; gap: 2px; margin-bottom: 8px; }
+.data-table.compact th, .data-table.compact td { padding: 5px 8px; font-size: 12px; }
+.check-list { display: flex; flex-direction: column; gap: 6px; }
+.check-chip { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; text-align: left; border: 1px solid var(--border); background: #fff; border-radius: 8px; padding: 8px 10px; cursor: pointer; }
+.check-chip.selected { border-color: var(--brand); box-shadow: 0 0 0 1px var(--brand) inset; }
+.check-chip-meta { color: var(--muted); font-size: 12px; }
+.version-stack { display: flex; flex-direction: column; gap: 10px; }
+.version-card { border: 1px solid var(--border); border-radius: 8px; padding: 10px; background: #fff; }
+.version-card.current { border-color: var(--brand); }
+.version-card header { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
+.note-list { margin: 8px 0 0; padding-left: 18px; font-size: 12px; color: #334155; }
+.hint-text { color: var(--muted); font-size: 12px; }
+.success-text { color: #157347; font-size: 13px; }
+.inline-link { margin-left: 8px; color: var(--brand); font-size: 12px; }
+

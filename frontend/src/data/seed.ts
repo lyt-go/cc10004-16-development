@@ -371,17 +371,17 @@ export const SEED_ROWS: Record<string, EntryRow[]> = {
     },
     {
       "id": 2,
-      "status": "事件评审中",
-      "pending": true,
-      "abnormal": true,
+      "status": "已发布",
+      "pending": false,
+      "abnormal": false,
       "事件编号": "EVEN-0002",
-      "事件名称": "事件定义样例2",
-      "事件类型": "事件定义样例2",
-      "触发条件": "事件定义样例2",
-      "上报参数": "事件定义样例2",
-      "采样比例": "事件定义样例2",
-      "所属产品": "事件定义样例2",
-      "事件负责人": "事件定义样例2"
+      "事件名称": "信息流曝光",
+      "事件类型": "曝光事件",
+      "触发条件": "页面 path 匹配 /feed 且曝光时长 >= 500ms",
+      "上报参数": "source、platform、content_id、is_new_user、ab_bucket",
+      "采样比例": "25%",
+      "所属产品": "信息流产品",
+      "事件负责人": "周敏（数据产品运营）"
     },
     {
       "id": 3,
@@ -551,13 +551,13 @@ export const SEED_ROWS: Record<string, EntryRow[]> = {
       "pending": true,
       "abnormal": true,
       "规则编号": "AUDI-0002",
-      "审计对象": "数据审计样例2",
-      "校验字段": "数据审计样例2",
-      "异常条件": "数据审计样例2",
-      "告警级别": "数据审计样例2",
-      "审计频率": "数据审计样例2",
-      "修复建议": "数据审计样例2",
-      "规则状态": "数据审计样例2"
+      "审计对象": "EVEN-0002 信息流曝光上报消息",
+      "校验字段": "source、platform、content_id、is_new_user",
+      "异常条件": "source != feed 或 platform != web；message.params 缺少 source / platform / content_id；同一设备 1 分钟内重复上报超过 3 条",
+      "告警级别": "P1",
+      "审计频率": "每日 02:00 全量扫描近 24 小时消息",
+      "修复建议": "按参数快照逐字段补齐缺失参数，口径漂移字段回退到快照值",
+      "规则状态": "规则评审中"
     },
     {
       "id": 3,
